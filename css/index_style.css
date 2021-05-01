@@ -1,0 +1,263 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FCD34D;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+#navbar{
+  background-color: #d69e2e;
+  font-size: 3em;
+  font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fefcbf;
+  padding: .1em;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#navbar h1{
+  color: #975a16;
+}
+
+#navbar ul{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#navbar ul li img{
+  width: 111px;
+}
+
+/* main section */
+
+#main-section{
+  position: relative;
+}
+
+/* banana animation */
+.dancing-banana img{
+  width: 111px;
+
+}
+
+#dancing-banana-1 img{
+  position: absolute;
+  top: 49vh;
+  left: 57vw;
+}
+#dancing-banana-1 img{
+  animation: banana-tilt-1 .5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes banana-tilt-1 {
+  0%{
+    transform: rotate(30deg);}
+  25%{
+    transform: rotate(35deg);}
+  50%{
+    transform: rotate(40deg);}
+  75%{
+    transform: rotate(35deg);}
+  100%{
+    transform: rotate(30deg);}
+}
+
+
+#dancing-banana-2 img{
+  position: absolute;
+  top: 31vh;
+  left: 1vw;
+}
+#dancing-banana-2 img{
+  animation: banana-tilt-2 .5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes banana-tilt-2 {
+  0%{
+    transform: rotate(70deg);}
+  25%{
+    transform: rotate(60deg);}
+  50%{
+    transform: rotate(50deg);}
+  75%{
+    transform: rotate(60deg);}
+  100%{
+    transform: rotate(70deg);}
+}
+
+
+#dancing-banana-3 img{
+  position: absolute;
+  top: 11vh;
+  right: 27vw;
+}
+#dancing-banana-3 img{
+  animation: banana-tilt-3 .5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes banana-tilt-3 {
+  0%{
+    transform: rotate(-70deg);}
+  25%{
+    transform: rotate(-60deg);}
+  50%{
+    transform: rotate(-50deg);}
+  75%{
+    transform: rotate(-60deg);}
+  100%{
+    transform: rotate(-70deg);}
+}
+
+
+#dancing-banana-4 img{
+  position: absolute;
+  top: 7vh;
+  left: 7vw;
+}
+#dancing-banana-4 img{
+  animation: banana-tilt-4 .5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes banana-tilt-4 {
+  0%{
+    transform: rotate(10deg);}
+  25%{
+    transform: rotate(15deg);}
+  50%{
+    transform: rotate(20deg);}
+  75%{
+    transform: rotate(15deg);}
+  100%{
+    transform: rotate(10deg);}
+}
+
+
+#dancing-banana-5 img{
+  position: absolute;
+  top: 1vh;
+  right: 7vw;
+}
+#dancing-banana-5 img{
+  animation: banana-tilt-5 .5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes banana-tilt-5 {
+  0%{
+    transform: rotate(30deg);}
+  25%{
+    transform: rotate(10deg);}
+  50%{
+    transform: rotate(-10deg);}
+  75%{
+    transform: rotate(10deg);}
+  100%{
+    transform: rotate(30deg);}
+}
+
+
+#dancing-banana-6 img{
+  position: absolute;
+  top: 52vh;
+  left: 11vw;
+}
+#dancing-banana-6 img{
+  animation: banana-tilt-6 .5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes banana-tilt-6 {
+  0%{
+    transform: rotate(-50deg);}
+  25%{
+    transform: rotate(-10deg);}
+  50%{
+    transform: rotate(30deg);}
+  75%{
+    transform: rotate(-10deg);}
+  100%{
+    transform: rotate(-50deg);}
+}
+
+
+#dancing-banana-7 img{
+  position: absolute;
+  top: 37vh;
+  right: 17vw;
+}
+#dancing-banana-7 img{
+  animation: banana-tilt-7 .5s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes banana-tilt-7 {
+  0%{
+    transform: rotate(-50deg);}
+  25%{
+    transform: rotate(-55deg);}
+  50%{
+    transform: rotate(-60deg);}
+  75%{
+    transform: rotate(-55deg);}
+  100%{
+    transform: rotate(-50deg);}
+}
+
+#user-interact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#user-input{
+  position: absolute;
+  top: 10vh;
+  left: 21vw;
+  width: 30vw;
+  height: 11vh;
+  border-radius: 7px;
+  outline: 0;
+  border: 0;
+  padding: 1em;
+  font-size: 1.1em;
+
+}
+
+#translate{
+  cursor: pointer;
+  position: absolute;
+  top: 23vh;
+  left: 26vw;
+  width: 20vw;
+  height: 7vh;
+  border-radius: 7px;
+  outline: 0;
+  border: 0;
+  background-color: #975a16;
+  color: #FCD34D;
+  font-size: 1.1em;
+}
+
+#output{
+  position: absolute;
+  background-color: #fff;
+  padding: 1em;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  top: 32vh;
+  left: 21vw;
+  width: 30vw;
+  height: 27vh;
+  border-radius: 7px;
+  outline: 0;
+  border: 0;
+}
